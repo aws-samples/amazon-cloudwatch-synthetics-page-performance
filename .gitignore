@@ -8,3 +8,5 @@ cdk.out
 .parcel-cache
 
 .package-lock.json
+package-lock.json
+.npmignore
