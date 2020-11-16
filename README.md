@@ -9,20 +9,20 @@ Having a low page load time is critical for startups because organic traffic is 
 * [AWS CDK](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html#getting_started_install). It requires you to set AWS credentials so that it can make calls to AWS services on your behalf.
 * Set the AWS region you want to deploy this application to. You can do so through `aws configure` or `AWS_DEFAULT_REGION` environment variable.
 
-#### Creating the infrastructure
+## Creating the infrastructure
 
 The application is implemented as a CDK application. When deploying, two configuration parameters are needed: the email that will be subscribed to the alarm topic and the URL of the page to be monitored.
 
 * `npm install` - bootstrap.
 * `cdk deploy --parameters subscriptionEmail="youremail@example.com" --parameters pageLoadTimeURL="https://www.example.com"` 
 
-### Architecture
+## Architecture
 
 The application creates a Synthetics Canary with the page load blueprint. A metric with the page load time is created, and an alert will be monitoring this metric and will be activated when the page load time surges above a threshold.
 
 ![amazon-cloudwatch-synthetics-page-load-time](images/diagram.png)
 
-###  Clean up
+##  Clean up
 Destroy the CDK Stack:
 Ensure you are in the cdk directory and then run the below command:
 
