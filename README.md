@@ -1,6 +1,6 @@
-## Amazon Cloudwatch Synthetics to measure page load time
+# Using Amazon Cloudwatch Synthetics to measure page load time
 The purpose of this repository is to demonstrate how Amazon Cloudwatch Synthetics can be used to measure the page load time.
-Having a low page load time is critical for startups because organic traffic is a very important source of traffic. Page ranking algorithms from search engines penalize pages with high load times. We can provide a solution to measure page load time and alert when it surges above a threshold using Cloudwatch Synthetics and a custom metric. From this metric we can create alarms and with SNS we can send the alarm by email. The solution can be easily extended to monitor multiple pages or send alerts using other means such as Slack with AWS Chatbot.
+Having a low page load time is critical for startups because organic traffic is a very important source of traffic. Page ranking algorithms from search engines penalize pages with high load times. We can provide a solution to measure page load time and alert when it surges above a threshold using [Amazon Cloudwatch Synthetics](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-synthetics-readme.html) and a custom metric. From this metric we can create alarms and with SNS we can send the alarm by email. The solution can be easily extended to monitor multiple pages or send alerts using other means such as Slack with [AWS Chatbot](https://docs.aws.amazon.com/chatbot/index.html).
 
 ## Requirements
 

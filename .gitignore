@@ -7,6 +7,4 @@ cdk.out
 # Parcel default cache directory
 .parcel-cache
 
-.package-lock.json
-package-lock.json
 .npmignore
